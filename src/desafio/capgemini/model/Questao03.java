@@ -33,7 +33,7 @@ public class Questao03 {
 	}
 	
 	public static int anagrama(String palavra) {
-		int quantidadeDePares = 0;
+		int quantidadeDeParesDeSubstrings = 0;
 		int parAtual = 1;
 		
 		Map<String, Integer> map = new HashMap<>();
@@ -58,9 +58,8 @@ public class Questao03 {
 		}
 		
 		for(Entry<String, Integer> dados : map.entrySet()) {
-			quantidadeDePares += dados.getValue()*(dados.getValue()-1) / 2;
+			quantidadeDeParesDeSubstrings += dados.getValue()*(dados.getValue()-1) / 2;
 		}
-		return quantidadeDePares;
-	}
-	
+		return quantidadeDeParesDeSubstrings;
+	}	
 }

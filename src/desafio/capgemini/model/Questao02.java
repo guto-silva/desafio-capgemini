@@ -24,8 +24,6 @@ package desafio.capgemini.model;
 
 import java.util.Scanner;
 
-import org.junit.jupiter.api.Test;
-
 public class Questao02 {
 	static int TAMANHO_MINIMO = 6;
 	public static void main(String[] args) {
@@ -33,19 +31,13 @@ public class Questao02 {
 		
 		String senha = leia.nextLine();
 		
-		
-		try {
-			if(numeroDeCaracteres(senha) < 6) {
+		if(numeroDeCaracteres(senha) < 6) {
 				System.out.println(TAMANHO_MINIMO - numeroDeCaracteres(senha));
-			}
-		} catch (Exception e) {
-			e.printStackTrace();
 		}
 		
 		leia.close();
 	}
 	
-	@Test
 	public static int numeroDeCaracteres (String senha) {
 		
 		return senha.length();
