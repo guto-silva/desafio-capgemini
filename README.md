@@ -24,5 +24,5 @@ Para executar use o comando:
      java Questao02
      java Questao03
     
- - No diretório Model dentro do src/desafio/capgemini você vai encontrar os 3 arquivos como o código dos exercícios resolvidos.
+ - No diretório Model dentro do src/desafio/capgemini você vai encontrar os 3 arquivos com o código dos exercícios resolvidos.
  - No diretório Test dentro do src/desafio/capgemini estão os arquivos com o código dos testes unitários com JUnit5.
